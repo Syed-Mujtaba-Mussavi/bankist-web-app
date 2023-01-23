@@ -346,3 +346,35 @@ labelBalance.addEventListener('click', function () {
     }
   });
 });
+
+// Numeric seperator
+const diameter = 287_460_000_000;
+console.log(diameter);
+
+const transferFee1 = 15_00;
+const transferFee2 = 1_500;
+
+console.log(2 ** 53 - 1);
+console.log(Number.MAX_SAFE_INTEGER);
+
+// BigInt: by putting the (n) at the end of the number it convert the number into bigInt and also with BigInt function
+const big = 341341413414141414134343894509895042840n;
+console.log(typeof big);
+
+// Operations
+console.log(10000n + 10000n);
+console.log(43214141413405985845712341341948n * 100000n);
+// we cannot sum the bigInt with simple number
+const huge = 23410948174901481740481n;
+const num = 23;
+console.log(huge + BigInt(num));
+
+// Exception
+console.log(20n > 10);
+console.log(20n === 20);
+console.log(20n == '20');
+console.log(huge + ' is REALLY big!');
+
+// Divisions
+console.log(10n / 3n);
+console.log(10 / 3);
