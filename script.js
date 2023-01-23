@@ -296,5 +296,31 @@ console.log(Math.PI * Number.parseFloat('10px') ** 2);
 console.log(Math.trunc(Math.random() * 6) + 1);
 
 const randomInt = (min, max) =>
-  Math.trunc(Math.random() * (max - min) + 1) + min;
-console.log(randomInt(10, 20));
+  Math.floor(Math.random() * (max - min) + 1) + min;
+// console.log(randomInt(10, 20));
+
+// Rounding intergers
+console.log(Math.trunc(23.3));
+
+// Math.round() round to the nearest interger
+console.log(Math.round(23.3));
+console.log(Math.round(23.9));
+
+// Math.ceil() always rounded up
+console.log(Math.ceil(23.3));
+console.log(Math.ceil(23.9));
+
+// Math.floor() always rounded down
+console.log(Math.floor(23.3));
+console.log(Math.floor(23.9));
+
+// comparing the trunc and floor method
+console.log(Math.trunc(-23.4));
+console.log(Math.floor(-23.3));
+
+// Rounding decimals
+// toFixed() method always return String
+console.log((2.7).toFixed(0)); // 3
+console.log((2.7).toFixed(3)); // 2.700
+console.log((2.345).toFixed(2));
+console.log(+(2.345).toFixed(2));
